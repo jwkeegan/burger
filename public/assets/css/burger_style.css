@@ -92,11 +92,37 @@ textarea {
 }
 
 @media screen and (max-width: 980px) {
+    .listed-burger {
+        height: 60px;
+    }
+
     .devour {
-        width: 40%;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        right: 0;
+        border-radius: 4px;
+    }
+
+    .devour:hover {
+        left: 0;
+        bottom: -5px;
+        right: 0;
+        border-radius: 4px;
     }
 
     .delete {
-        width: 40%;
+        width: 100%;
+        left: 0;
+        bottom: -5px;
+        right: 0;
+        border-radius: 4px;
+    }
+
+    .delete:hover {
+        left: 0;
+        bottom: -5px;
+        right: 0;
+        border-radius: 4px;
     }
 }
