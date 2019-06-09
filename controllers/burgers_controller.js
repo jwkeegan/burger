@@ -46,5 +46,22 @@ router.put("/api/burgers/:id", function(req, res) {
     });
 });
 
+// delete method to /api/burgers/:id with id specified to remove burger from db
+router.delete("/api/burgers/:id", function(req, res) {
+    var condition = "id = " + req.params.id;
+
+    console.log("condition: " + condition);
+
+    burger.deleteOne(
+        condition, function(result) {
+            if (result.changedRows == 0) {
+                return res.status(404).end();
+            } else {
+                res.status(200).end();
+            }
+        }
+    );
+});
+
 // export router
 module.exports = router;

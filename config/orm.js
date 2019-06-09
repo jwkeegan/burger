@@ -80,6 +80,20 @@ var orm = {
                 cb(result);
             }
         );
+    },
+    // Method deleteOne deletes a burger from the database
+    deleteOne: function(tableInput, condition, cb) {
+        var queryString = "DELETE FROM " + tableInput;
+        queryString += " WHERE " + condition;
+        console.log(queryString);
+
+        connection.query(
+            queryString,
+            function(err, result) {
+                if(err) throw err;
+                cb(result);
+            }
+        );
     }
 };
 

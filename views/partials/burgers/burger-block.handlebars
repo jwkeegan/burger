@@ -2,11 +2,16 @@
     <div class="listed-burger">
         <div class="burger-id">
             {{id}}.)
-        </div> 
-        {{burger_name}}
-        {{#unless eaten}}
-        <button class="devour" data-id="{{id}}">Devour it!</button>
-        {{/unless}}
+        </div>
+        <div class="burger-name">
+            {{burger_name}}
+            {{#if eaten}}
+            <button class="delete" data-id="{{id}}">Delete</button>
+            {{else}}
+            <button class="devour" data-id="{{id}}">Devour it!</button>
+            {{/if}}
+        </div>
+
     </div>
 
 </li>

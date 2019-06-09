@@ -1,5 +1,19 @@
 // Wait to attach handlers until DOM is fully loaced
 $(function() {
+    // Delete button -> delete from database and webpage
+    $(".delete").on("click", function(event) {
+        var id = $(this).data("id");
+
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE",
+        }).then(
+            function() {
+                console.log("Deleted Burger #" + id);
+                location.reload();
+            }
+        );
+    });
+
     // Devour button -> update devoured from false to true
     $(".devour").on("click", function(event) {
         event.preventDefault();

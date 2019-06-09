@@ -6,6 +6,7 @@ body {
     border: 4px black solid;
     padding: 5px;
     margin: -2px;
+    border-radius: 10px;
 }
 
 h3 {
@@ -13,6 +14,8 @@ h3 {
     margin: -5px;
     padding-bottom: 5px;
     border-bottom: 2px rgb(255, 145, 0) solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 img {
@@ -32,6 +35,12 @@ li {
 .burger-id {
     float: left;
     padding-left: 5px;
+    position: absolute;
+}
+
+.burger-name {
+    position: relative;
+    margin: 0 auto;
 }
 
 .listed-burger {
@@ -39,6 +48,7 @@ li {
     background-color: lightgray;
     border: 1px gray solid;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .devour {
@@ -55,6 +65,26 @@ li {
 .devour:hover {
     background-color: rgb(255, 115, 0);
     border: 2px forestgreen solid;
+    height: 30px;
+    bottom: 1px;
+}
+
+.delete {
+    position: relative;
+    float: right;
+    width: 30%;
+    height: 29px;
+    border-radius: 5px;
+    border: 1px forestgreen solid;
+    background-color: rgb(255, 145, 0);
+    right: -1px;
+}
+
+.delete:hover {
+    background-color: rgb(255, 115, 0);
+    border: 2px forestgreen solid;
+    height: 30px;
+    bottom: 1px;
 }
 
 textarea {
