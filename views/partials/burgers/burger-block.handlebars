@@ -1,12 +1,12 @@
 <li>
-    {{#if eaten}}
-        <div class="uneaten-burger">
-            {{name}}
-        </div>
-    {{else}}
-        <div class="uneaten-burger">
-            {{name}}
-        </div>
-        <button class="devour">Devour it!</button>
-    {{/if}}
+    <div class="listed-burger">
+        <div class="burger-id">
+            {{id}}.)
+        </div> 
+        {{burger_name}}
+        {{#unless eaten}}
+        <button class="devour" data-id="{{id}}">Devour it!</button>
+        {{/unless}}
+    </div>
+
 </li>

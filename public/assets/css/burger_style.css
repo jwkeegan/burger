@@ -1,0 +1,62 @@
+body {
+    background-color: #ffe02e;
+}
+
+.content {
+    border: 4px black solid;
+    padding: 5px;
+    margin: -2px;
+}
+
+h3 {
+    background-color: forestgreen; 
+    margin: -5px;
+    padding-bottom: 5px;
+    border-bottom: 2px rgb(255, 145, 0) solid;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.burger-id {
+    float: left;
+    padding-left: 5px;
+}
+
+.listed-burger {
+    height: 30px;
+    background-color: lightgray;
+    border: 1px gray solid;
+    border-radius: 5px;
+}
+
+.devour {
+    position: relative;
+    float: right;
+    width: 30%;
+    height: 29px;
+    border-radius: 5px;
+    border: 1px forestgreen solid;
+    background-color: rgb(255, 145, 0);
+    right: -1px;
+}
+
+.devour:hover {
+    background-color: rgb(255, 115, 0);
+    border: 2px forestgreen solid;
+}
+
+textarea {
+    margin-bottom: 5px;
+}

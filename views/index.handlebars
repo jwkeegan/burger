@@ -1,13 +1,18 @@
-<div class="container align-center">
+<div class="container text-center">
     <div class="row">
-        <h1>
-            Eat Da Burger!
-        </h1>
-        <img src="../public/assets/img/burger.jpg" alt="Burger">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 content">
+            <h1>
+                Eat Da Burger!
+            </h1>
+        </div>
+        <div class="col-lg-3"></div>
     </div>
 
     <div class="row">
-        <div class="col-lg-6" id="burgers">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 content" id="burgers">
+            <h3>Burgers to Eat</h3>
             <ul>
                 {{#each burgers}}
                     {{#unless devoured}}
@@ -16,7 +21,11 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col-lg-6" id="eaten-burgers">
+        <div class="col-lg-2 content">
+            <img src="/assets/img/burger.PNG" alt="Burger">
+        </div>
+        <div class="col-lg-4 content" id="eaten-burgers">
+            <h3>Burgers Eaten</h3>
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
@@ -25,15 +34,21 @@
                 {{/each}}
             </ul>
         </div>
+        <div class="col-lg-1"></div>
     </div>
 
     <div class="row">
-        <form>
-            <div class="form-group">
-                <label for="burger-input"></label>
-                <textarea class="form-control" id="burger-input" rows="3"></textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 content">
+            <h3>Add a New Burger</h3>
+            <form class="new-burger">
+                <div class="form-group">
+                    <label for="burger-input"></label>
+                    <textarea class="form-control" id="burger-input" rows="3"></textarea>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-3"></div>
     </div>
 </div>
