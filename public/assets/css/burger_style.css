@@ -90,3 +90,13 @@ li {
 textarea {
     margin-bottom: 5px;
 }
+
+@media screen and (max-width: 980px) {
+    .devour {
+        width: 40%;
+    }
+
+    .delete {
+        width: 40%;
+    }
+}
