@@ -54,7 +54,8 @@ router.delete("/api/burgers/:id", function(req, res) {
 
     burger.deleteOne(
         condition, function(result) {
-            if (result.changedRows == 0) {
+            if (result.affectedRows == 0) {
+                console.log(result);
                 return res.status(404).end();
             } else {
                 res.status(200).end();
